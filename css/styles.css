@@ -8,8 +8,8 @@
 
 html, body {
     background: black;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
     height: 100%;
     -webkit-text-size-adjust: none;
 }
@@ -54,6 +54,7 @@ h2
 	font-family: Verdana,Helvetica,sans-serif;
 	font-size: 11pt;
 	text-align: left;
+    margin-top: 15px;
 	padding-bottom: 0;
 }
 
@@ -97,6 +98,11 @@ optgroup option
 {
     margin-left: 1em;
 }
+
+ul
+ {
+     list-style-type: none;
+ }
 
 li.menuItem
 {
