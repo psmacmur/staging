@@ -85,6 +85,12 @@ input
     margin-top: 4px;
 }
 
+
+input.button
+{
+    padding: 5px 10px;
+}
+
 select
 {
 	background: #323232;
