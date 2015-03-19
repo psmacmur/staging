@@ -53,7 +53,7 @@
                 <label for="itemBA2">Hide bath mat</label>
             </li>
             <li><input type="checkbox" class="chkOption" id="itemBA3" name="itemBA3" value="itemBA3"/>
-                <label for="itemBA3">Hide bath towels</label>
+                <label for="itemBA3">Hide bath towels & robe</label>
             </li>
             <li><input type="checkbox" class="chkOption" id="itemBA4" name="itemBA4" value="itemBA4"/>
                 <label for="itemBA4">Nice hand towel</label>
@@ -68,6 +68,9 @@
             <li><input type="checkbox" class="chkOption" id="itemK1" name="itemK1" value="itemK1"/>
                 <label for="itemK1">Clean and put away dishes</label>
             </li>
+            <li><input type="checkbox" class="chkOption" id="itemK2" name="itemK2" value="itemK2"/>
+                <label for="itemK2">Wipe down the sink & faucet</label>
+            </li>
             <li><input type="checkbox" class="chkOption" id="item5" name="item5" value="item5"/>
                 <label for="item5">Clear and wipe kitchen counters</label>
             </li>
@@ -79,20 +82,12 @@
             </li>
 
         </ul>
-        <input type="button" class="button" id="reset" name="Reset" value="Reset" onclick="$('input:checkbox').removeAttr('checked');$('#check')[0].innerHTML = '';"/>
+        <input type="button" class="button" id="reset" name="Reset" value="Reset" onclick="reset()"/>
+        <input type="button" class="button" id="evening" name="Evening" value="Evening" onclick="parent.location='evening.html'" />
 
         <div id="check"></div>
     </div>
 </div>
-<script type="text/javascript" language="JavaScript">
-    $('input:checkbox').change(function() {
-        if ($('input:checkbox').length === $('input:checked').length ) {
-            $('#check')[0].innerHTML = "Good to go";
-        }
-        else {
-            $('#check')[0].innerHTML = "";
-        }
-    });
-</script>
+<script src="js/code.js"></script>
 </body>
 </html>
